@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温馨跳转</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <h1>请稍后 | 请仔细阅读</h1>
+            <h2>您好，本次赞助非借还制度，请需要还钱的退出此页，需要还钱的、找茬的禁止赞助，如果闹事请后果自负。请确保第三方是<font color="red"> 爱发电 </font>发起人：<font color="red"> 燕京城下公交迷-358 </font>，如果赞助错了，我们不对您的资金损失负责。温馨提示：最低赞助5元哦！看完信息之后自动跳转或您手动按跳转就代表您已经阅读且同意！一定一定要留下您的网名和QQ号，否则我们联系不到您！并且保留好自动发放的编号！燕京城下公交迷团队官方邮箱：<font color="red">yjcxgjmtd@qq.com</font>有问题请发送之邮箱！谢谢您的赞助！</h2>
+            <a href="https://afdian.net/@yjcxgjmtdgw">请读完👆上面的信息 | 戳我跳过等待时间</a>
+            <h4>预 计：</h4>
+            <h3>等待倒计时</h3>
+            <h4>秒后跳转</h4>
+        </div>
+    </div>
+    <script>
+        var edjs = document.getElementsByTagName("h3")[0];
+        var time = 121;
+        var timer = setInterval(function() {
+            time --;
+            if (time == 0) {
+                clearInterval(timer);
+                location.href = 'https://afdian.net/@yjcxgjmtdgw'
+            }
+            edjs.innerHTML = time;
+        },1000);
+    </script>
+</body>
+</html>
