@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 75% auto;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.container h1{
+    width: 38% auto;
+    font-weight: 50px;
+    font-size: 300;
+    color: aqua;
+}
+.container h3{
+    width: 60% auto;
+    font-weight: 4000;
+    font-size: 50px;
+    color: rgb(0, 255, 85);
+}
+.container p{
+    width: 20% auto;
+    font-weight: 50000;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+}
+.video{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
